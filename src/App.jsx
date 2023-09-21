@@ -7,7 +7,6 @@ import PageNotFound from './pages/pageNotFound'
 import Policy from './pages/policy'
 import About from './pages/about'
 import Register from './pages/auth/register'
-import { ToastContainer } from 'react-toastify'
 
 function App() { 
  
