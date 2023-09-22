@@ -7,6 +7,7 @@ import PageNotFound from './pages/pageNotFound'
 import Policy from './pages/policy'
 import About from './pages/about'
 import Register from './pages/auth/register'
+import Login from './pages/auth/login'
 
 function App() { 
  
@@ -16,6 +17,7 @@ function App() {
    <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/register' element={<Register/>}/>
+     <Route path='/Login' element={<Login/>}/>
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/policy' element={<Policy/>}/>
     <Route path='/about' element={<About/>}/>
