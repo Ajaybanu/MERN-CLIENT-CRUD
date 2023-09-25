@@ -77,6 +77,7 @@ function Login() {
           <button
             type="button"
             className="btn forgot-btn"
+            onClick={()=>{navigate("/forget-password")}}
           >
             Forgot Password
           </button>

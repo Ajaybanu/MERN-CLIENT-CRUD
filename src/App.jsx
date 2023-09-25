@@ -10,6 +10,7 @@ import Register from './pages/auth/register'
 import Login from './pages/auth/login'
 import PrivateRoute from './components/Routes/private'
 import Dashboard from './pages/User/dashboard'
+import ForgetPassword from './pages/auth/forgetPassword'
 
 function App() { 
  
@@ -20,11 +21,13 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/register' element={<Register/>}/>
      <Route path='/Login' element={<Login/>}/>
+     <Route path='/forget-password' element={<ForgetPassword/>}/>
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/policy' element={<Policy/>}/>
     <Route path='/about' element={<About/>}/>
-    <Route path='/dashboard' element={<PrivateRoute/>}/>
-    <Route path='' element={<Dashboard/>}/>
+    <Route path='/dashboard' element={<PrivateRoute/>}>
+    <Route path='user' element={<Dashboard/>}/>
+    </Route>
 
     <Route path='/*' element={<PageNotFound/>}/>
     
